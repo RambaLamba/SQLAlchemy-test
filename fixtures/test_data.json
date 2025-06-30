@@ -1,0 +1,84 @@
+[
+  {
+    "model": "publisher",
+    "pk": 1,
+    "fields": {
+      "name": "Эксмо"
+    }
+  },
+  {
+    "model": "publisher",
+    "pk": 2,
+    "fields": {
+      "name": "АСТ"
+    }
+  },
+  {
+    "model": "book",
+    "pk": 1,
+    "fields": {
+      "title": "Мастер и Маргарита",
+      "id_publisher": 1
+    }
+  },
+  {
+    "model": "book",
+    "pk": 2,
+    "fields": {
+      "title": "1984",
+      "id_publisher": 2
+    }
+  },
+  {
+    "model": "shop",
+    "pk": 1,
+    "fields": {
+      "name": "Буквоед"
+    }
+  },
+  {
+    "model": "shop",
+    "pk": 2,
+    "fields": {
+      "name": "Лабиринт"
+    }
+  },
+  {
+    "model": "stock",
+    "pk": 1,
+    "fields": {
+      "id_book": 1,
+      "id_shop": 1,
+      "count": 10
+    }
+  },
+  {
+    "model": "stock",
+    "pk": 2,
+    "fields": {
+      "id_book": 2,
+      "id_shop": 2,
+      "count": 5
+    }
+  },
+  {
+    "model": "sale",
+    "pk": 1,
+    "fields": {
+      "price": 600.50,
+      "date_sale": "09-11-2022",
+      "id_stock": 1,
+      "count": 2
+    }
+  },
+  {
+    "model": "sale",
+    "pk": 2,
+    "fields": {
+      "price": 500.00,
+      "date_sale": "08-11-2022",
+      "id_stock": 2,
+      "count": 1
+    }
+  }
+]
